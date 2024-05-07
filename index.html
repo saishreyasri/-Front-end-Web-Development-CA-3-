@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteBuds - What to Cook Today</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">TasteBuds</h1>
+            <p class="description">Welcome to TasteBuds, your ultimate culinary companion! Explore a delightful array of recipes, restaurant picks, and cooking tips tailored to your taste buds. Whether you're a seasoned chef or a kitchen newbie, let us inspire your next delicious adventure!</p>
+            <input type="text" id="searchInput" class="search" placeholder="Search for a meal...">
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section id="randomMealSection">
+                <h2 class="section-title">Random Meal</h2>
+                <div class="meal-container" id="randomMealContainer">
+                    <!-- Random meal content will be dynamically added here -->
+                </div>
+            </section>
+
+            <section id="searchResultsSection" style="display: none;">
+                <h2 class="section-title">Search Results</h2>
+                <div class="meal-container" id="searchResultsContainer">
+                    <!-- Search results content will be dynamically added here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="ingredientModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 class="modal-title" id="modalMealName"></h2>
+            <div class="ingredient-list" id="ingredientList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
